@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_bg"
+    android:gravity="bottom" >
+
+    <TextView
+        android:id="@+id/textViewServerIpCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Server IP:"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/buttonServer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="22dp"
+        android:text="Start server" />
+
+    <TextView
+        android:id="@+id/textViewIpCaption"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/buttonServer"
+        android:layout_marginTop="34dp"
+        android:text="Enter server ip and click Connect"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/textViewServerIp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textViewServerIpCaption"
+        android:text="0.0.0.0"
+        android:textColor="#fff" 
+        />
+
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Status"
+        android:textColor="#fff" />
+
+    <EditText
+        android:id="@+id/editTextServerIp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewIpCaption"
+        android:ems="10"
+        android:text="0"
+        android:textColor="#fff" >
+
+    </EditText>
+
+    <Button
+        android:id="@+id/buttonClient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTextServerIp"
+        android:text="Connect" />
+
+    <Button
+        android:id="@+id/buttonDraw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/buttonClient"
+        android:text="Draw" />
+
+    <Button
+        android:id="@+id/buttonCheckSDP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewIpCaption"
+        android:layout_toRightOf="@+id/buttonServer"
+        android:text="Check SDP" />
+
+    <TextView
+        android:id="@+id/textViewSDP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewStatus"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/buttonDraw"
+        android:maxLines="15"
+        android:text="SDP"
+        android:scrollbars="vertical"
+        android:textColor="#fff" />
+
+</RelativeLayout>
